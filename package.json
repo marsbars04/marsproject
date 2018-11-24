@@ -1,5 +1,5 @@
 {
-  "name": "angular7-template",
+  "name": "mars",
   "version": "0.18.0",
   "scripts": {
     "ng": "ng",
@@ -10,11 +10,11 @@
     "build": "ng build --prod --aot --build-optimizer --stats-json --named-chunks",
     "dev": "webpack --mode development ./src/index.js --output ./dist/main.js",
     "deploy:dev": "git add . && npm version minor --force -m \"v.%s\"",
-    "deploy:alpha": "heroku git:remote -a angular7-template && git push heroku master",
+    "deploy:alpha": "heroku git:remote -a mars && git push heroku master",
     "pree2e": "webdriver-manager update --standalone false --gecko false --quiet",
     "e2e": "protractor ./protractor.conf.js",
     "heroku-postbuild": "ng build --prod --aot --build-optimizer --stats-json --named-chunks",
-    "postversion": "git push origin master && git push --tags && heroku git:remote -a angular7-template-dev && git push heroku master -f"
+    "postversion": "git push origin master && git push --tags && heroku git:remote -a mars-dev && git push heroku master -f"
   },
   "private": true,
   "dependencies": {

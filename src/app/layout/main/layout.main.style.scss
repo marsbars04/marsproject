@@ -1,0 +1,16 @@
+.wrapper {
+  width: 100%;
+  height: calc(100vh - 0px);
+  background-color: #f00;
+  -webkit-animation: ColorFlow 5s infinite;
+}
+
+@-webkit-keyframes ColorFlow {
+  0%,
+  100% {
+    background-color: #f00;
+  }
+  50% {
+    background-color: #00f;
+  }
+}

@@ -10,7 +10,7 @@ const routes: Routes = []
 export const AppRoutes: Routes = [
   {
     path: '',
-    redirectTo: 'portal/login',
+    redirectTo: 'dashboard',
     pathMatch: 'full',
   },
   {
@@ -21,6 +21,6 @@ export const AppRoutes: Routes = [
   {
     path: '',
     component: LayoutMainComponent,
-    children: [{ path: 'dashboard', loadChildren: './modules/main.module#MainModule' }],
+    children: [{ path: '', loadChildren: './modules/main.module#MainModule' }],
   },
 ]

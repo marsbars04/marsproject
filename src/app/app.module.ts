@@ -9,9 +9,11 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations'
 import { LayoutPortalComponent } from './layout/portal/layout.portal.component'
 import { GlobalModule } from './modules/global.module'
 import { LayoutMainComponent } from './layout/main/layout.main.component'
+import { MainHeaderComponent } from './layout/main/header/header.component';
+import { MainFooterComponent } from './layout/main/footer/footer.component';
 
 @NgModule({
-  declarations: [AppComponent, LayoutPortalComponent, LayoutMainComponent],
+  declarations: [AppComponent, LayoutPortalComponent, LayoutMainComponent, MainHeaderComponent, MainFooterComponent],
   imports: [BrowserModule, NoopAnimationsModule, GlobalModule, RouterModule.forRoot(AppRoutes, { preloadingStrategy: PreloadAllModules })],
   providers: [],
   bootstrap: [AppComponent],

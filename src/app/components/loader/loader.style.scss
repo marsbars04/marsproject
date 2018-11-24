@@ -1,0 +1,115 @@
+@keyframes lds-wedges {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes lds-wedges {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.lds-wedges {
+    position: relative;
+}
+
+.lds-wedges>div>div {
+    -webkit-transform-origin: 100px 100px;
+    transform-origin: 100px 100px;
+    -webkit-animation: lds-wedges 3s linear infinite;
+    animation: lds-wedges 3s linear infinite;
+    opacity: 0.8;
+}
+
+.lds-wedges>div>div>div {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    width: 70px;
+    height: 70px;
+    border-radius: 70px 0 0 0;
+    -webkit-transform-origin: 100px 100px;
+    transform-origin: 100px 100px;
+}
+
+.lds-wedges>div div:nth-child(1)>div {
+    background: #3be8b0;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.lds-wedges>div div:nth-child(1) {
+    -webkit-animation-duration: 0.75s;
+    animation-duration: 0.75s;
+}
+
+.lds-wedges>div div:nth-child(2)>div {
+    background: #1aafd0;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.lds-wedges>div div:nth-child(2) {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.lds-wedges>div div:nth-child(3)>div {
+    background: #6a67ce;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.lds-wedges>div div:nth-child(3) {
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+}
+
+.lds-wedges>div div:nth-child(4)>div {
+    background: #ffb900;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.lds-wedges>div div:nth-child(4) {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+}
+
+.lds-wedges {
+    width: 40px !important;
+    height: 40px !important;
+    -webkit-transform: translate(-20px, -20px) scale(0.2) translate(20px, 20px);
+    transform: translate(-20px, -20px) scale(0.2) translate(20px, 20px);
+}
+
+.lds-css {
+    position: absolute;
+    top: 9px;
+    left:5px;
+}
+
+.loader-btn {
+    height: 100%;
+    color: black;
+    width: 100%;
+    padding: 10px;
+    font-size: 19px;
+    font-weight: 100;
+    box-shadow: 1px 1px 1px #aaaaaa9c;
+    padding-left: 50px!important;
+    background: rgb(238, 238, 238);
+    transform: translateY(0px);
+    text-align: right;
+}

@@ -1,0 +1,29 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/*.js.map": true,
+    "**/*.js": { "when": "$(basename).ts" },
+    "out": false // set this to true to hide the "out" folder with the compiled JS files
+  },
+
+  "search.exclude": {
+    "out": true // set this to false to include "out" folder in search results
+  },
+  // ESLint configuration
+
+  // Control whether eslint is enabled for JavaScript files or not.
+  "eslint.enable": true,
+
+  // The eslint options object to provide args to the eslint command.
+  "eslint.options": {},
+
+  "editor.mouseWheelZoom": false,
+
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "es5",
+  "prettier.semi": false,
+  "prettier.printWidth": 200,
+
+  "typescript.tsdk": "./node_modules/typescript/lib"
+}

@@ -1,6 +1,5 @@
 var webpack = require('webpack')
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-var CompressionPlugin = require("compression-webpack-plugin");
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 const arch = process.env.ARCH || process.arch;
